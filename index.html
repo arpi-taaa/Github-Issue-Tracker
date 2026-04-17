@@ -49,10 +49,12 @@
             </div>
         </div>
 
-        <div class="rounded-lg text-center">
+        <div class="text-center">
             <p class="text-xs text-gray-400 mb-2">Demo Credentials:</p>
-            <p class="text-sm text-gray-700"><strong>Username:</strong> admin</p>
-            <p class="text-sm text-gray-700"><strong>Password:</strong> admin123</p>
+            <div class="">
+                <p class="text-sm text-gray-700"><strong>Username:</strong> admin</p>
+                <p class="text-sm text-gray-700"><strong>Password:</strong> admin123</p>
+            </div>
         </div>
     </div>
 
@@ -65,9 +67,7 @@
             const user = document.getElementById('username').value;
             const pass = document.getElementById('password').value;
 
-            // Simple Logic Check
             if (user === 'admin' && pass === 'admin123') {
-                // Redirect to main page (ensure dashboard.html exists)
                 window.location.href = 'dashboard.html';
             } else {
                 alert('Invalid Credentials! Please use the demo info provided.');
