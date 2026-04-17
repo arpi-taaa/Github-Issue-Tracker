@@ -35,7 +35,14 @@
 
     <main class="max-w-7xl mx-auto mt-8 px-4">
 
-        
+        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 mb-6 flex gap-2">
+            <button onclick="filterIssues('all')" id="tab-all"
+                class="tab-btn btn btn-sm bg-[#5800FF] text-white border-none">All</button>
+            <button onclick="filterIssues('open')" id="tab-open"
+                class="tab-btn btn btn-sm btn-ghost border border-gray-200">Open</button>
+            <button onclick="filterIssues('closed')" id="tab-closed"
+                class="tab-btn btn btn-sm btn-ghost border border-gray-200">Closed</button>
+        </div>
 
         <div class="bg-white p-6 rounded-t-xl border border-gray-200 flex justify-between items-center">
             <div class="flex items-center gap-4">
